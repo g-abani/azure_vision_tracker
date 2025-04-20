@@ -1,0 +1,9 @@
+streamlit
+Pillow
+numpy
+opencv-python-headless
+plotly
+python-dotenv
+scipy
+requests
+azure-cognitiveservices-vision-computervision

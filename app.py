@@ -74,10 +74,7 @@ if uploaded_file:
         st.subheader("⚡ Preview Formats")
         col1, col2 = st.columns(2)
 
-        with col1:
-            st.image(gif_path, caption="GIF Preview", use_container_width=True)
-            with open(gif_path, "rb") as f:
-                st.download_button("⬇️ Download GIF", f, file_name="annotated_preview.gif")
+        
 
         with col2:
             with open(webm_path, "rb") as f:
