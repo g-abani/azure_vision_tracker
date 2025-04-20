@@ -11,6 +11,8 @@ from backend.text_processor import extract_text, visualize_ocr_on_image
 from utils.media_utils import detect_media_type, extract_video_thumbnail
 
 st.title("Azure Vision AI - Image & Video Analyzer")
+st.markdown("<div style='text-align: right;'>👤 Built by Abani Behera (s225534832@deakin.edu.au)</div>", unsafe_allow_html=True)
+ 
 
 uploaded_file = st.file_uploader("Upload an image or video", type=["jpg", "jpeg", "png", "mp4", "mov"])
 
