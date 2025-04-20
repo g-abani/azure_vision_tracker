@@ -11,8 +11,8 @@ from io import BytesIO
 # Load environment variables
 # load_dotenv()
 
-AZURE_ENDPOINT = "https://4382-computer-vision.cognitiveservices.azure.com/"
-AZURE_KEY = "CkVzy8Fy4OhsyBt6SAEUl8DuAE8kSZqL6PQtOM6D6VPL6hZigttFJQQJ99BDACYeBjFXJ3w3AAAFACOGXp9x"
+AZURE_ENDPOINT = "https://4382-cv.cognitiveservices.azure.com/"
+AZURE_KEY = "DjCee3Pxd3UOWxvUvc1pe4JA0pGOf0PVqEOMTE8f5eDMVyrzRGmEJQQJ99BDACGhslBXJ3w3AAAFACOGfrpH"
 
 if not AZURE_ENDPOINT or not AZURE_KEY:
     raise ValueError("Missing AZURE_ENDPOINT or AZURE_KEY.")
