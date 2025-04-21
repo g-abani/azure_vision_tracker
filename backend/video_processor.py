@@ -123,8 +123,11 @@ def process_video(video_path, frame_interval=10, delay_between_requests=1.0):
 
     subprocess.run([
         "ffmpeg", "-y", "-i", out_path,
-        "-c:v", "libvpx-vp9", "-b:v", "1M",
-        "-c:a", "libopus", webm_path
+        "-c:v", "libvpx-vp9", "-b:v", "2M",
+        "-c:a", "libopus",
+        "-vf", "scale=960:-1:flags=lanczos",  # upscale width to 960px, preserve aspect
+        webm_path
     ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
 
     return out_path, log_path, viz_path, gif_path, webm_path

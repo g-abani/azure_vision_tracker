@@ -71,15 +71,15 @@ if uploaded_file:
         #with open(annotated_path, "rb") as video_file:
         #    st.video(video_file.read())
 
-        st.subheader("⚡ Preview Formats")
-        col1, col2 = st.columns(2)
+        #st.subheader("⚡ Preview Formats")
+        # col1, col2 = st.columns(2)
 
         
 
-        with col2:
-            with open(webm_path, "rb") as f:
-                st.video(f.read(), format="video/webm")
-                st.download_button("⬇️ Download WebM", f, file_name="annotated_preview.webm")
+        st.subheader("⚡ Preview (WebM Format)")
+        with open(webm_path, "rb") as f:
+            st.video(f.read(), format="video/webm")
+            st.download_button("⬇️ Download WebM", f, file_name="annotated_preview.webm")
 
         if viz_path:
             st.subheader("📊 Object Movement Visualization")
